@@ -5,6 +5,10 @@ import { StyleSheet, Text, View, TextInput, ScrollView, Button } from 'react-nat
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    
+    function Switch() {
+        console.log("login clicked", email, password);
+    }
 
     //component rendering
     return (
@@ -33,7 +37,7 @@ export default function Login() {
                 <View style={styles.signup}>
                     <Button
                         style={styles.buttoncontainer}
-                        onPress={this.Switch}
+                        onPress={Switch}
                         title="Sign UP"
                     />
                 </View>
